@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<head>
+	<title></title>
+</head>
+
+
+<style type="text/css">
+
+/* nav-bar */
+
+#navimg{
+position: relative;
+float: left;
+	height: 55px;
+	width: 100px;
+}
+
+
+#event{
+
+
+
+
+
+}
+
+#buy{
+
+
+width: 160px;
+                height: 100px;
+                background: blue;
+                border-radius: 75%;
+                z-index: 100px;
+}
+
+/* champions */
+
+#champions {
+
+background-image: url("assets/images/roster.jpg");
+
+}
+
+
+
+
+
+/* contact */
+#contact{
+
+background-color: black;	
+
+
+}
+
+#title{
+color: white;
+text-align: center;
+bottom: -150px;
+position: relative;
+}
+form
+{
+left: 100px;
+width: 400px;
+max-height: 100%;
+bottom: -250px;
+position: relative;
+
+
+}
+label{
+  b;
+color: white;
+}
+#logocontact {
+height: 25000px;
+position: relative;
+float: right;
+
+}
+
+
+/* footer section */
+.footer-pics{
+
+	height: 50px;
+	width: 50px;
+}
+.footer{
+	margin-left:auto;
+margin-right:auto;
+position: relative;
+}
+
+</style>
+
+
+
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header"><img id= "navimg" src="assets/images/logo.jpg">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#1">Link</a></li>
+        <li><a href="#event">Event</a></li>
+         <li><a href="#champions">Champions</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id = "1" style="min-height: 1000px; background : red">
+	
+
+
+
+</div>
+<div id = "event" style="min-height: 1000px; background : yellow">
+	<img src="assets/images/12117event.jpg">
+
+<div id = "buy"> 
+
+<h1>Buy Now!</h1>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div id = "champions" style="min-height: 1000px">
+	
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div id = "contact" style="min-height: 1000px;">
+
+
+
+<div class="contact">
+ <div class="row">
+	<div class="col-md-4">
+	<form>
+  
+
+ 
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="name" class="form-control" id="namecontact">
+   
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Subject</label>
+    <input type="subject" class="form-control" id="subjectcontact">
+  
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Email Address</label>
+    <input type="email" class="form-control" id="emailcontact">
+  
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
+  </div>
+ 
+ <button type="submit" class="btn btn-primary">Submit</button>
+ 
+
+
+  </form>
+</div>
+ 
+<div class="col-md-4">
+ <h1  id="title"> Message Us</h1>
+</div>
+<div class="col-md-4">
+<img  class = "logocontact"src="assets/images/logo.jpg" style="height : 111px;" >
+</div>
+</div>
+</div>
+
+
+<div class="navbar navbar-inverse navbar-fixed-bottom" role = "navigation">
+<div class ="footer">
+
+<a href="https://www.facebook.com/ProWrestlingMagic/"><img class = "footer-pics" src="assets/images/facebook.png"></a>
+
+<a href="https://twitter.com/WrestlingMagic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class = "footer-pics" src="assets/images/twitter.png"></a>
+<a href="https://www.instagram.com/prowrestlingmagic/"><img class = "footer-pics"src="assets/images/instagram.png"></a>
+</div>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+  $('nav li a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>
