@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <head>
-	<title></title>
+  <title></title>
 </head>
 
 
@@ -13,27 +13,30 @@
 #navimg{
 position: relative;
 float: left;
-	height: 55px;
-	width: 100px;
+  height: 55px;
+  width: 100px;
+}
+
+/* home */
+#home
+{
+background-image: url("assets/images/logo.jpg");
+background-repeat: repeat-y;
+ background-size: 100% 100%;
 }
 
 
-#event{
+/* event section*/
 
+#eventppv{
 
-
-
+background-image: url("assets/images/12117event.jpg");
+background-repeat: no-repeat;
+ background-size: 75% 100%;
 
 }
-
 #buy{
-
-
-width: 160px;
-                height: 100px;
-                background: blue;
-                border-radius: 75%;
-                z-index: 100px;
+background-color: purple;
 }
 
 /* champions */
@@ -51,7 +54,7 @@ background-image: url("assets/images/roster.jpg");
 /* contact */
 #contact{
 
-background-color: black;	
+background-color: black;  
 
 
 }
@@ -73,27 +76,35 @@ position: relative;
 
 }
 label{
-  b;
+  
 color: white;
 }
 #logocontact {
 height: 25000px;
 position: relative;
 float: right;
-
+4
 }
 
 
 /* footer section */
 .footer-pics{
 
-	height: 50px;
-	width: 50px;
+  height: 50px;
+  width: 50px;
+  
+   
 }
 .footer{
-	margin-left:auto;
+  margin-left:auto;
 margin-right:auto;
 position: relative;
+}
+
+#imgfooter{
+
+   width: 50%;
+    margin: 0 auto;
 }
 
 </style>
@@ -121,7 +132,7 @@ position: relative;
       
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#1">Link</a></li>
+        <li><a href="#home">Link</a></li>
         <li><a href="#event">Event</a></li>
          <li><a href="#champions">Champions</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -129,17 +140,22 @@ position: relative;
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div id = "1" style="min-height: 1000px; background : red">
-	
-
-
+<div id = "home" style="min-height: 925px;">
+  
 
 </div>
-<div id = "event" style="min-height: 1000px; background : yellow">
-	<img src="assets/images/12117event.jpg">
+<div id = "event" style="min-height: 925px;">
+   <div class="row">
+<div class="col-md-9">
+<div id="eventppv">
+  
+
+</div>
+</div>
+
 
 <div id = "buy"> 
-
+<div class="col-md-3">
 <h1>Buy Now!</h1>
 
 </div>
@@ -147,13 +163,13 @@ position: relative;
 
 </div>
 
+</div>
+
+</div>
 
 
-
-
-
-<div id = "champions" style="min-height: 1000px">
-	
+<div id = "champions" style="min-height: 925px">
+  
 
 
 
@@ -166,14 +182,14 @@ position: relative;
 
 
 
-<div id = "contact" style="min-height: 1000px;">
+<div id = "contact" style="min-height: 925px;">
 
 
 
 <div class="contact">
  <div class="row">
-	<div class="col-md-4">
-	<form>
+  <div class="col-md-4">
+  <form>
   
 
  
@@ -209,7 +225,7 @@ position: relative;
  <h1  id="title"> Message Us</h1>
 </div>
 <div class="col-md-4">
-<img  class = "logocontact"src="assets/images/logo.jpg" style="height : 111px;" >
+
 </div>
 </div>
 </div>
@@ -217,22 +233,22 @@ position: relative;
 
 <div class="navbar navbar-inverse navbar-fixed-bottom" role = "navigation">
 <div class ="footer">
-
+<div  id = "imgfooter">
 <a href="https://www.facebook.com/ProWrestlingMagic/"><img class = "footer-pics" src="assets/images/facebook.png"></a>
 
 <a href="https://twitter.com/WrestlingMagic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class = "footer-pics" src="assets/images/twitter.png"></a>
 <a href="https://www.instagram.com/prowrestlingmagic/"><img class = "footer-pics"src="assets/images/instagram.png"></a>
 </div>
 </div>
-
+</div>
 
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
-	
-	$(document).ready(function(){
+  
+  $(document).ready(function(){
   $('nav li a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname) {
