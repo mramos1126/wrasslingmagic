@@ -1,0 +1,198 @@
+
+body{
+
+overflow-y: scroll; overflow-x:hidden;
+
+
+}
+/* nav-bar */
+
+#navimg{
+position: relative;
+float: left;
+	height: 55px;
+	width: 100px;
+}
+
+li:hover{
+
+  background-color: red;
+}
+
+
+/* home */
+#home
+{
+
+background-repeat: repeat-y;
+ background-size: 100% 100%;
+}
+
+
+/* event section*/
+
+
+.mySlides{
+
+width: 75%;
+height: 1000px;
+
+}
+
+
+#buy{
+height: 1000px;
+width: 25%;
+background-color: black;
+float: right;
+position: relative;
+bottom: 1000px;
+
+color: white;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+ text-decoration: none;
+
+}
+
+a:active {
+    color: white;
+ text-decoration: none;
+}
+
+#text{
+position: relative;
+  top: 50px;
+}
+
+
+/* champions */
+.roster{
+
+}
+#champions {
+
+
+background-repeat: repeat-y;
+ background-size: 100% 100%;
+}
+#champs{
+ margin: 0 auto;
+
+}
+.rosterpics{
+
+    
+height: 200px;
+width: 200px;
+ margin: 0 auto;
+
+}
+
+
+
+#leftpics{
+  float: left;
+right: -150px;
+
+position: relative;
+
+
+}
+
+#rightpics
+{
+ left: 200px;
+  float: left;
+
+position: relative;
+
+}
+
+#champs{
+position: relative;
+  top: 152px;
+  
+}
+
+/* contact */
+#contact{
+background-repeat: repeat-y;
+ background-size: 100% 100%;
+
+
+}
+.contact{
+}
+#title{
+color: white;
+text-align: center;
+bottom: -150px;
+position: relative;
+}
+form
+{
+top: 100px;
+left: 100px;
+width: 250px;
+
+bottom: -250px;
+position: relative;
+
+
+}
+label{
+  
+color: white;
+}
+#logocontact {
+height: 25000px;
+position: relative;
+float: right;
+
+}
+
+
+/* footer section */
+.footer-pics{
+
+	width: 274px;
+  overflow: auto;
+  position: relative;
+  float: left;
+  margin: 20px 0 25px;
+  }
+
+  .footer-pics:hover{
+    background-position: 0 0;
+
+  }
+
+  .footernote{
+position: relative;
+float: left;
+
+  }
+   
+
+.footer{
+	margin-left:auto;
+margin-right:auto;
+position: relative;
+}
+
+#imgfooter{
+position: relative;
+	 width: 50%;
+    margin: 0 auto;
+float: right;
+}
+
+h4{
+	color: white;
+text-align: center;
+}

@@ -1,213 +1,46 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ <link
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"  type='text/css'>
 <head>
+
 	<title>Pro Wrestling Magic</title>
 <link rel="icon" type="image/png" href="assets/images/logo.jpg"/>
 </head>
 
+<body>
 
 <style type="text/css">
 
-/* nav-bar */
-
-#navimg{
-position: relative;
-float: left;
-	height: 55px;
-	width: 100px;
-}
-
-/* home */
 #home
 {
-background-image: url("assets/images/logo.jpg");
+background : url("assets/images/logo.jpg");
 background-repeat: repeat-y;
+ background-size: 100% 100%;}
+#champions{
+background : url("assets/images/roster.jpg");
+
  background-size: 100% 100%;
 }
 
-
-/* event section*/
-
-
-.mySlides{
-
-width: 75%;
-height: 1000px;
-
-}
-
-
-#buy{
-height: 1000px;
-width: 25%;
-background-color: black;
-float: right;
-position: relative;
-bottom: 1000px;
-
-color: white;
-}
-a:visited {
-    text-decoration: none;
-}
-a:hover {
-    color: white;
- text-decoration: none;
-
-}
-
-a:active {
-    color: white;
- text-decoration: none;
-}
-
-#text{
-position: relative;
-  top: 50px;
-}
-
-
-/* champions */
-
-#champions {
-
-background-image: url("assets/images/roster.jpg");
-
-}
-#champs{
- margin: 0 auto;
-position: relative;
-}
-.rosterpics{
-
-height: 200px;
-width: 200px;
-
-}
-
-
-
-#leftpics{
-  float: left;
-margin: 10px;
-}
-
-#rightpics
-{
-  float: right;
-margin: 10px;
-}
-
-#champs{
-position: relative;
-  top: 152px;
-  
-}
-
-/* contact */
 #contact{
+background : url("assets/images/messageimg.jpg");
 background-repeat: repeat-y;
  background-size: 100% 100%;
-
-background-image: url("assets/images/messageimg.jpg");
-}
-.contact{
-top: 100px;
- margin: 0 auto;
-    text-align: left;
-    width: 600px;
-background-color: #A0A0A0  ;
-background: rgba(255, 0, 0, 0.4);
-
-height: 575px;
-position: relative;
-}
-#title{
-color: white;
-text-align: center;
-bottom: -150px;
-position: relative;
-}
-form
-{
-top: 100px;
-left: 100px;
-width: 400px;
-max-height: 100%;
-bottom: -250px;
-position: relative;
-
-
-}
-label{
-  
-color: white;
-}
-#logocontact {
-height: 25000px;
-position: relative;
-float: right;
-
 }
 
-
-/* footer section */
-.footer-pics{
-
-	height: 50px;
-	width: 50px;
-	margin-left: 10px;
-  }
-
-  .footer-pics:hover{
-    background-position: 0 0;
-
-  }
-
-  .footernote{
-position: relative;
-float: left;
-
-  }
-   
-
-.footer{
-	margin-left:auto;
-margin-right:auto;
-position: relative;
-}
-
-#imgfooter{
-position: relative;
-	 width: 50%;
-    margin: 0 auto;
-float: right;
-}
-
-h4{
-	color: white;
-text-align: center;
-}
 
 
 </style>
-
-
-
-
-<body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header"><img id= "navimg" src="assets/images/logo.jpg">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+
    
     </div>
 
@@ -224,11 +57,11 @@ text-align: center;
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div id = "home" style="min-height: 925px;">
+<div id = "home" style="min-height: 600px;">
 	
 
 </div>
-<div id = "event" style="min-height: 925px;">
+<div id = "event" style="min-height: 600px;">
 
 
 
@@ -259,7 +92,7 @@ text-align: center;
   <li>Jun 17</li>
 
 </ul>
-<p>Location yet to be determined</p>
+<p>Location yet to be determined.</p>
 </div>
 </div>
 
@@ -271,26 +104,69 @@ text-align: center;
 </div>
 
 
-<div id = "champions" style="min-height: 925px">
-	<div id="champs">
+<div id = "champions" style="min-height: 200px;">
+	
+
+  <div id="champs">
+<p id = "headerroster">Pro Wrestling Championship</p>
  <div class="row">
-  <div class="col-md-4">
+
+
+<div class = "leftpics">
+ <div class="col-md-4">
+<div class="champtitle">
+<div class="title">PWM Women's Champion</div>
 <img class="rosterpics" id="leftpics" src="assets/images/sonya.jpg">
+<div class="wrestlerName"><p class = "spanName">Sonya Strong</p>
+ <div class="row">
+ <div class="col-md-3">
+<a  class = "spanIcon" href="https://www.instagram.com/ms.sonyastrong/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+</div>
+ <div class="col-md-3">
+
+<a class = "spanIcon" href="https://twitter.com/sonya_strong1?lang=en"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-md-4">
+<div class="champtitle">
+<div class="title">PWM Dark Arts Champion</div>
 <img class="rosterpics" id ="leftpics"src="assets/images/cross.png">
+<div class="wrestlerName"><p class = "spanName">Everett Cross</p></div>
 </div>
-  <div class="col-md-4">
-<img class="rosterpics" id = "rightpics"src="assets/images/ricky.jpg">
+</div>
+</div>
+
+
+
+
+ 
+<div class = "rightpics">
+ <div class="col-md-4">
+<div class="champtitle">
+
+<div class="title">PWM Heavyweight Champion</div>
+<img class="rosterpics" id = "rightpics"src="assets/images/ecnegro.jpg">
+<div class="wrestlerName"><p class = "spanName">EC Negro</p></div>
+</div>
+</div>
+ <div class="col-md-4">
+<div class="champtitle">
+<div class="title">PWM Tag Team Champions</div>
 <img class="rosterpics" id ="rightpics"src="assets/images/graysons.jpg">
-
+<div class="wrestlerName"><p class = "spanName">The Amazing Graysons</p></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
-</div>
-</div>
 
 
-
-<div id = "contact" style="min-height: 900px;">
+<div id = "contact" style="min-height: 600px;">
 
 
 
@@ -334,63 +210,35 @@ text-align: center;
 
 </div>
 </div>
-
+</div>
 
 <div class="navbar navbar-inverse navbar-fixed-bottom" role = "navigation">
 <div class ="footer">
-<div  id = "imgfooter">
- <div class="row">
-  <div class="col-md-4">
-<div class = "footernote">
 
-</div>
+ <div class="row">
+  
+ <div class="col-md-4">
+<p id ="footernote"> Follow us :</p>
 </div>
  <div class="col-md-4">
-<a href="https://www.facebook.com/ProWrestlingMagic/"><img class = "footer-pics" src="assets/images/facebook.png"></a>
+<div id = "footericon">
 
-<a href="https://twitter.com/WrestlingMagic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class = "footer-pics" src="assets/images/twitter.png"></a>
-<a href="https://www.instagram.com/prowrestlingmagic/"><img class = "footer-pics"src="assets/images/instagram.png"></a>
+<a href= "https://www.instagram.com/prowrestlingmagic/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com/ProWrestlingMagic/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+<a href="https://twitter.com/WrestlingMagic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+</div>
+
 </div>
 </div>
 
+
 </div>
+
 </div>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script type="text/javascript">
-	var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
-	$(document).ready(function(){
-  $('nav li a').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
-       return false;
-      }
-    }
-  });
-});
-</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
 
 
 </body>
