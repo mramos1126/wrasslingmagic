@@ -1,26 +1,35 @@
-var express = require('express')
-var app = express()
-  var api_key = 'key-099e3c897cd1af01f2c7f2bac5051cc5';
-var domain = 'wrasslingmagic.domain.com';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
+
+
  
-app.get('/', function (req, res) {
- 
+var app = express(); // Tells node that we are creating an "express" server
+var PORT = process.env.PORT || 3000;
 
-  var data = {
-  from: 'mramos1126@gmail.com',
-  to: 'mramos1126@gmail.com',
-  subject: 'Danzig',
-  text: 'mother!'
 
-}
-console.log("work");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.text());
+app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
-mailgun.messages().send(data, function (error, body) {
-  console.log(body);
+
+// Allows the serving of static content such as CSS.
+app.use(express.static(__dirname + '/app/public'));
+
+
+
+
+// ================================================================================
+// ROUTER
+// The below points our server to a series of "route" files.
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs. 
+// ================================================================================
+
+require('./app/routing/api-routes.js')(app); 
+require('./app/routing/html-routes.js')(app);
+
+
+app.listen(PORT, function() {
+	console.log("App listening on PORT: " + PORT);
 });
-});
-
-
-app.listen(3000)
-
