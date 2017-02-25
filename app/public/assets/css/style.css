@@ -141,10 +141,10 @@ position: relative;
 #champions {
 
 background-image: url("../images/roster.jpg");
-
 }
 
 #champs{
+overflow: hidden;
 
  margin: auto;
     width: 60%;
@@ -160,23 +160,24 @@ text-align: center;
 }
 .champtitle{
 
-   width: 210px;
+   width: 200px;
    height: 220px;
 color: white;
 background-color: black;
-
    position: relative;
 text-align: center;
-  margin: auto;
-   
+
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
 
 }
 
 
 
 .rosterpics{
-height: 190px;
-width: 190px;
+height: 180px;
+width: 170px;
 
 
 }
@@ -191,7 +192,10 @@ position: relative;
 #rightpics{
 position: relative;
   margin: auto;
+   
     width: 60%; 
+
+
 }
 
 
@@ -201,7 +205,7 @@ position: relative;
   bottom: 0px;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 054, 0.72);
+  background: rgba(100, 100, 100, 0.72);
   color: #fff;
   visibility: hidden;
   opacity: 0;
