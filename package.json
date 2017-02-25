@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mramos1126/wrasslingmagic#readme",
   "dependencies": {
     "body": "^5.1.0",
+    "body-parser": "^1.16.1",
     "express": "^4.14.1",
     "mailgun-js": "^0.8.2",
     "parser": "^0.1.4"

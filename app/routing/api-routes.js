@@ -16,7 +16,7 @@ module.exports = function(app){
 		  from: 'mramos1126@gmail.com', // sender address
 		  to: 'mramos1126@gmail.com',
 		  subject: req.body.subject, // Subject line
-		  text: 'New message from: ' + req.body.email + ' : ' + req.body.mess // plaintext body
+		  text: 'New message from: ' + req.body.mess + ' : ' +req.body.email  // plaintext body
 		};
 		 
 		mailgun.messages().send(data, function (error, body) {
