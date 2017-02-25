@@ -1,20 +1,26 @@
 {
-  "name": "hotrestaurant",
+  "name": "wrasslingmagic",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mramos1126/wrasslingmagic.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
-    "mailgun-js": "^0.7.12",
-   
+  "bugs": {
+    "url": "https://github.com/mramos1126/wrasslingmagic/issues"
   },
-  "engines": {
-    "node": "5.3.0"
+  "homepage": "https://github.com/mramos1126/wrasslingmagic#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.14.1",
+    "mailgun-js": "^0.8.2",
+    "parser": "^0.1.4"
   }
 }
