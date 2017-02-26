@@ -55,9 +55,9 @@ text-align: center;
   overflow: hidden;
   text-align: center;
   
-  -webkit-animation: rotateWord 18s linear infinite 0s;
-  -ms-animation: rotateWord 18s linear infinite 0s;
-  animation: rotateWord 18s linear infinite 0s;
+  -webkit-animation: rotateWord 12s linear infinite 0s;
+  -ms-animation: rotateWord 12s linear infinite 0s;
+  animation: rotateWord 12s linear infinite 0s;
  color: white;
 }
 .rw-words-1 span:nth-child(2) { 
@@ -94,7 +94,13 @@ text-align: center;
 
 
 /* event section*/
+.space{
 
+  background-color: black;
+
+  width: 100%;
+  height: 20px;
+}
 
 .mySlides{
 
@@ -112,6 +118,7 @@ float: right;
 position: relative;
 height: 750px;
 border-color: white;
+text-align: center;
 border-style: solid;
 color: white;
 }
@@ -132,6 +139,20 @@ a:active {
 #text{
 position: relative;
   top: 50px;
+}
+.address{
+
+  font-size: 20px;
+}
+.futureEvents{
+
+top: 100px;
+ 
+position: relative;
+}
+.dates{
+
+  font-size: 20px;
 }
 
 
@@ -229,7 +250,7 @@ position: relative;
  .spanIcon{
 ;
 color: purple;
-bottom: -50px;
+bottom: -80px;
 margin: 5px;
 width: 100px;
 position: relative;
