@@ -15,10 +15,7 @@ float: left;
 
 }
 
-li:hover{
 
-  background-color: red;
-}
 
 /* home */
 #home
@@ -34,7 +31,7 @@ background-repeat: repeat-y;
 
    position: absolute;
    margin: 0 auto;
-    top: 450px;
+    top: 625px;
 width: 80%;
 text-align: center;
 
@@ -43,6 +40,8 @@ text-align: center;
 
 .rw-sentence span{
  color: #444;
+  
+
   font-size: 200%;
   text-align: center;
   }
@@ -100,7 +99,7 @@ text-align: center;
 .mySlides{
 
 width: 70%;
-height: 570px;
+height: 750px;
 float: left;
 }
 
@@ -111,7 +110,7 @@ width: 30%;
 background-color: black;
 float: right;
 position: relative;
-height: 570px;
+height: 750px;
 border-color: white;
 border-style: solid;
 color: white;
@@ -156,12 +155,16 @@ max-height: 100%
 #headerroster{
 color: white;
 text-align: center;
+margin-top: 60px;
+font-size: 25px;
 
+    background-color:black;
+   
 }
 .champtitle{
 
-   width: 200px;
-   height: 220px;
+   width: 250px;
+   height: 270px;
 color: white;
 background-color: black;
    position: relative;
@@ -169,15 +172,15 @@ text-align: center;
 
 margin-left:auto;
 margin-right:auto;
-margin-top:10px;
+margin-top:25px;
 
 }
 
 
 
 .rosterpics{
-height: 180px;
-width: 170px;
+height: 230px;
+width: 270px;
 
 
 }
@@ -252,7 +255,7 @@ background-repeat: repeat-y;
 background-image: url(assets/images/messageimg.jpg);
 }
 .contact{
-top: 75px;
+top: 150px;
 margin: auto;
   width: 400px;
 color: white;
@@ -260,15 +263,15 @@ color: white;
 padding: 10px;
 position: relative;
 background: rgba(200, 54, 54, 0.5); 
-max-width: 100%;
 
+height: 400px;
 
 
 }
 #title{
 color: white;
 text-align: center;
-bottom: -150px;
+
 position: relative;
 }
 form
@@ -276,7 +279,7 @@ form
 
 
 
-width: 250px;
+width: 350px;
 
 
 position: relative;
@@ -290,31 +293,37 @@ color: white;
 #logocontact {
 
 position: relative;
-float: right;
+text-align: center;
 
 }
 
 
 /* footer section */
+
+
+
 #footernote{
-float: left;
-left: 100px;
 color: white;
 bottom: -10px;
 position: relative;
-margin-left: auto; 
-    margin-right: auto;
+text-align: center;
+font-size: 10px;
 }
-#footericon{
-color: white;
-width: 50%;
-position: relative;
- margin-left: auto; 
-    margin-right: auto;
- margin-bottom: 10px;
- 
-  }
 
+
+
+
+.icon{
+position: relative;
+
+padding : 10px;
+ overflow: hidden;
+   left: 45%;
+   right: 40%;
+ display: inline;;
+
+  bottom: -10px
+  }
 
 
 
