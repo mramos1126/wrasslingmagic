@@ -53,7 +53,7 @@ function carousel() {
           //console.log(data);
         
         })
-      alert("Message has been sent.");
+      $('#myModal').modal("show");
       $('#nameContact').val("");
       $('#emailContact').val("");
       $('#messageContact').val("");

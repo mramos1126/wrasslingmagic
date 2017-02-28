@@ -317,8 +317,33 @@ position: relative;
 text-align: center;
 
 }
+.modal-header{
 
+background-color : blue;
+color : white;
+text-align : center;
+}
+.modal-body{
+text-align : center;
+}
+.close {
+color: #fff;
+opacity: 1;
+}
+.modal-header{
 
+background-color : blue;
+color : white;
+text-align : center;
+}
+.modal-body{
+text-align : center;
+color: black;
+}
+.close {
+color: #fff;
+opacity: 1;
+}
 /* footer section */
 
 
