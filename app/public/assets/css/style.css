@@ -1,6 +1,6 @@
 
 body{
-
+font-family: monospace;
 overflow-y: scroll; overflow-x:hidden;
 
 
@@ -94,33 +94,36 @@ text-align: center;
 
 
 /* event section*/
-.space{
 
-  background-color: black;
+.eventHeader{
+color: black;
 
-  width: 100%;
-  height: 20px;
+ top: 50px;
+position: relative;
 }
-
 .mySlides{
-
-width: 70%;
-height: 750px;
+width: 50%;
+height: 730px;
 float: left;
 }
 
 
 #buy{
-overflow: scroll;
-width: 30%;
-background-color: black;
-float: right;
+overflow: auto;
+width: 25%;
+color: black;
+
+float: left;
 position: relative;
-height: 750px;
+height: 730px;
 border-color: white;
 text-align: center;
 border-style: solid;
 color: white;
+background-image: url("../images/wrestling2.jpg");
+background-repeat: repeat-y;
+ background-size: 100% 100%;
+
 }
 a:visited {
     text-decoration: none;
@@ -136,14 +139,21 @@ a:active {
  text-decoration: none;
 }
 
-#text{
-position: relative;
-  top: 50px;
+.bottomLine{
+color: black;
+
+font-size: 15px;
+top: 100px;
+position: relative;  
 }
 .address{
-
+top: 230px;
   font-size: 20px;
+position: relative;  
+color: black;
+
 }
+
 .futureEvents{
 
 top: 100px;
@@ -151,11 +161,45 @@ top: 100px;
 position: relative;
 }
 .dates{
+ list-style-type: none;
+ font-size: 30px;
+text-align: center;
+top: 185px;
+position: relative;
+color: black;
 
-  font-size: 20px;
 }
+.futureEvents{
+top: 0px;
+width: 25%;
+background-image: url("../images/wrestling1.jpg");
+float: right;
+position: relative;
+height: 730px;
+border-color: white;
+text-align: center;
+border-style: solid;
+color: white;
+position: relative;
+background-repeat: repeat-y;
+ background-size: 100% 100%;
+color: black;
+}
+.address{
+top : 200px;
+position: relative;
+line-height: 40px;
+font-size: 30px;
+color: black;
 
+}
+.purchaseTicket{
+color: black;
 
+position: relative;
+top: 300px;
+  
+}
 /* champions */
 
 #champions {
@@ -257,7 +301,7 @@ position: relative;
 }
 
 #headerroster{
-font-size: 25px;
+font-size: 30px;
 color: white;
 text-align: center;
 
@@ -289,12 +333,7 @@ height: 400px;
 
 
 }
-#title{
-color: white;
-text-align: center;
 
-position: relative;
-}
 form
 {
 
