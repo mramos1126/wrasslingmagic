@@ -5,6 +5,12 @@ overflow-y: scroll; overflow-x:hidden;
 
 
 }
+
+#event{
+
+  background-color: blue;
+}
+
 /* nav-bar */
 
 #navimg{
@@ -12,83 +18,10 @@ position: relative;
 float: left;
 	height: 55px;
 	width: 100px;
-
+image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
-
-
-
-/* home */
-#home
-{
-background-image: url(../assets/images/logo.jpg);
-background-repeat: repeat-y;
- background-size: 100% 100%;
-
-}
-
-
-.rw-wrapper{
-
-   position: absolute;
-   margin: 0 auto;
-    top: 625px;
-width: 80%;
-text-align: center;
-
-
-}
-
-.rw-sentence span{
- color: #444;
-  
-
-  font-size: 200%;
-  text-align: center;
-  }
-.rw-words{
- 
-  text-align: center;
-}
-.rw-words-1 span{
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-  text-align: center;
-  
-  -webkit-animation: rotateWord 12s linear infinite 0s;
-  -ms-animation: rotateWord 12s linear infinite 0s;
-  animation: rotateWord 12s linear infinite 0s;
- color: white;
-}
-.rw-words-1 span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-  -ms-animation-delay: 3s; 
-  animation-delay: 3s; 
-  color: white;
-text-align: center;
-}
-.rw-words-1 span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-  -ms-animation-delay: 6s; 
-  animation-delay: 6s; 
-  color: white;
-text-align: center;
-}
-
-@-webkit-keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-  5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-  20% { opacity: 0; -webkit-transform: translateY(30px); }
-  80% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-
-
-
-
 
 
 
@@ -103,15 +36,18 @@ background-color:black;
 position: relative;
 }
 .mySlides{
-width: 50%;
+width: 40%;
 height: 730px;
 float: left;
+image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 
 #buy{
 overflow: auto;
-width: 25%;
+width: 30%;
 
 float: left;
 position: relative;
@@ -123,7 +59,9 @@ border-style: solid;
 background-image: url("../images/wrestling2.jpg");
 background-repeat: repeat-y;
  background-size: 100% 100%;
-
+image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 a:visited {
     text-decoration: none;
@@ -144,7 +82,7 @@ opacity: 0.6;
 color: white;
 background-color:black;
 font-size: 15px;
-top: 250px;
+top: 200px;
 position: relative;  
 }
 .address{
@@ -175,7 +113,7 @@ background-color:black;
 }
 .futureEvents{
 top: 0px;
-width: 25%;
+width: 30%;
 background-image: url("../images/wrestling1.jpg");
 float: right;
 position: relative;
@@ -186,7 +124,10 @@ border-style: solid;
 position: relative;
 background-repeat: repeat-y;
  background-size: 100% 100%;
-
+image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+overflow: auto;
 }
 .address{
 top : 200px;
@@ -206,10 +147,7 @@ top: 300px;
 }
 /* champions */
 
-#champions {
 
-background-image: url("../images/roster.jpg");
-}
 
 #champs{
 overflow: hidden;
@@ -218,7 +156,7 @@ overflow: hidden;
     width: 60%;
 height: 100%;
 position: relative;
-max-height: 100%
+
 }
 
 #headerroster{
